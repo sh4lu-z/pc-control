@@ -1,0 +1,31 @@
+# Node.js Dependencies
+node_modules/
+*/node_modules/
+
+# PC Server Specific
+server/tokens.json
+server/temp_prompt.vbs
+
+# Expo / App Specific
+.expo/
+app/.expo/
+app/dist/
+app/web-build/
+app/expo-env.d.ts
+
+# Generated Native folders
+app/ios/
+app/android/
+
+# Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
