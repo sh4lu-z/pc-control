@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sh4lu Z Terminal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sh4lu_Z <span class="accent">Terminal</span></h1>
+            <div id="connectionStatus" class="status">Connecting...</div>
+        </header>
+
+        <section class="card stats-card">
+            <h2>Live System Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-label">CPU LOAD</div>
+                    <div class="stat-value" id="cpuVal">--%</div>
+                    <div class="progress-bar"><div class="progress" id="cpuProgress"></div></div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">RAM USAGE</div>
+                    <div class="stat-value" id="ramVal">--%</div>
+                    <div class="progress-bar"><div class="progress" id="ramProgress"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Audio Control</h2>
+            <div class="audio-controls">
+                <button id="muteBtn" class="btn outline">Mute</button>
+                <input type="range" id="volSlider" min="0" max="100" value="50">
+                <span id="volLabel" style="width: 40px; text-align: right; font-family: monospace; font-size: 1.1rem;">50%</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Quick Launch Modules</h2>
+            <div class="btn-grid">
+                <button class="btn accent-btn" onclick="app.launch('vscode')">{ VS Code }</button>
+                <button class="btn accent-btn" onclick="app.launch('chrome')">Chrome</button>
+                <button class="btn accent-btn" onclick="app.launch('terminal')">Terminal >_</button>
+            </div>
+        </section>
+        
+        <section class="card danger-zone">
+            <h2>Core Power Management</h2>
+            <div class="btn-grid">
+                <button class="btn danger-btn" onclick="app.power('sleep')">Sleep</button>
+                <button class="btn danger-btn" onclick="app.power('restart')">Restart</button>
+                <button class="btn danger-btn" onclick="app.power('shutdown')">Shutdown</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
