@@ -41,4 +41,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Developer
 Developed by **Shaluka Gimhan (sh4lu-z)**.
 
-Total Lines of Code: **10922** <!-- LOC -->
+Total Lines of Code: **10923** <!-- LOC -->
